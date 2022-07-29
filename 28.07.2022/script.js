@@ -9,7 +9,7 @@ let resultSubstraction = input1 - input2;
 let resultMultiplication = input1 * input2;
 let resultDivision = input1 / input2;
 
-if (typeof parsed1 == "number" && typeof parsed2 == "number") {
+if (typeof input1 != NaN && typeof input2 != NaN) {
     switch (input3) {
         case "+":
             alert("Thank you! Your result is: " + resultAddition);
