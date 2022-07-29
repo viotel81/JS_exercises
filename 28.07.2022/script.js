@@ -9,7 +9,7 @@ let resultSubstraction = input1 - input2;
 let resultMultiplication = input1 * input2;
 let resultDivision = input1 / input2;
 
-if (typeof input1 != NaN && typeof input2 != NaN) {
+if (!isNaN(input1) && !isNaN(input1)) {
     switch (input3) {
         case "+":
             alert("Thank you! Your result is: " + resultAddition);
@@ -27,11 +27,5 @@ if (typeof input1 != NaN && typeof input2 != NaN) {
             alert("Please check the action provided and try again!");
     }
 } else {
-    switch (input3) {
-        case "+":
-            alert("Thank you! Your result is: " + resultConcat);
-            break;
-        default:
-            alert("Please check the values provided and try again!");
-    }
+    input3 == "+" ? alert("Thank you! Your result is: " + resultConcat) : alert("Please check the values provided and try again!");
 }
